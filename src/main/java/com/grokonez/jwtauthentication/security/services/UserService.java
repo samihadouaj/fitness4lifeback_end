@@ -33,6 +33,7 @@ public class UserService {
         u.setTarget_weight(user.getTarget_weight());
         u.setDiet_pace(user.getDiet_pace());
         u.setHigh(user.getHigh());
+        u.setBalance(user.getBalance());
         this.userRepo.save(u);
     }
 

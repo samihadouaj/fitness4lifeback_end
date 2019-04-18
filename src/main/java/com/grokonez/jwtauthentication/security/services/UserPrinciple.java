@@ -33,9 +33,10 @@ public class UserPrinciple implements UserDetails {
     private int calories_needed;
     private String email;
     private String password;
+    private int [] balance;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserPrinciple(String id, String firstName, String lastName, String username, String gender, int age, int current_weight, int high, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, String email, String password, Collection<? extends GrantedAuthority> authorities) {
+    public UserPrinciple(String id, String firstName, String lastName, String username, String gender, int age, int current_weight, int high, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, String email, String password, int[] balance , Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -51,6 +52,7 @@ public class UserPrinciple implements UserDetails {
         this.calories_needed = calories_needed;
         this.email = email;
         this.password = password;
+        this.balance = balance;
         this.authorities = authorities;
     }
 
@@ -74,6 +76,7 @@ public class UserPrinciple implements UserDetails {
                 user.getCalories_needed(),
                 user.getEmail(),
                 user.getPassword(),
+                user.getBalance(),
                 authorities
         );
     }
@@ -126,7 +129,9 @@ public class UserPrinciple implements UserDetails {
         return calories_needed;
     }
 
-
+    public int[] getBalance() {
+        return balance;
+    }
 
     public String getEmail() {
         return email;

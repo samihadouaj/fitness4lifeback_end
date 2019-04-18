@@ -5,14 +5,14 @@ import org.springframework.data.annotation.Id;
 public class DayAssesment {
     @Id
     private String id;
-    private String userId;
+    private String uid;
     private FoodPlusQty[] mekla;
     private float totalCalIn;
     private float calBurned;
     private ActivityPlusQty[] activities;
 
     public DayAssesment(String user_id, FoodPlusQty[] mekla, float totalCalIn, float calBurned, ActivityPlusQty[] activities) {
-        this.userId = user_id;
+        this.uid = user_id;
         this.mekla = mekla;
         this.totalCalIn = totalCalIn;
         this.calBurned = calBurned;
@@ -23,8 +23,8 @@ public class DayAssesment {
         return id;
     }
 
-    public String getUser_id() {
-        return userId;
+    public String getUuidid() {
+        return uid;
     }
 
     public FoodPlusQty[] getMekla() {
@@ -47,8 +47,8 @@ public class DayAssesment {
         this.id = id;
     }
 
-    public void setUserId(String user_id) {
-        this.userId = user_id;
+    public void setUid(String user_id) {
+        this.uid = user_id;
     }
 
     public void setMekla(FoodPlusQty[] mekla) {

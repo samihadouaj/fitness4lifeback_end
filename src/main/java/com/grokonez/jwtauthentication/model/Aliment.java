@@ -19,6 +19,15 @@ public class Aliment {
     private String name;
     private int lipides,glucides,proteines;
     private double qty;
+    private int cals;
+
+    public void setCals(int cals) {
+        this.cals = cals;
+    }
+
+    public int getCals() {
+        return cals;
+    }
 
     public Aliment(){
 

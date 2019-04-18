@@ -30,6 +30,16 @@ public class User{
     private String diet_pace;
     private int imc;
     private int calories_needed;
+    private int [] balance;
+
+    public void setBalance(int[] balance) {
+        this.balance = balance;
+    }
+
+    public int[] getBalance() {
+        return balance;
+    }
+
     @NotBlank
     @Size(max = 50)
     @Email
