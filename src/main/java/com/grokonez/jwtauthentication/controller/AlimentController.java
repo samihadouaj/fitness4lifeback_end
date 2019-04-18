@@ -6,15 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class AlimentController {
     @Autowired
     private AlimentService alimentsService;
-    @RequestMapping("/Aliments")
+    @RequestMapping("/Aliment/get")
     public List<Aliment> getAllAliments(){
        return alimentsService.getAllAliments();
     }
+
+    @RequestMapping("/Aliment/reg/{reg}")
+    public List<Aliment> getAlimentByRegex(@PathVariable String reg){
+        return alimentsService.getAlimentByRegex(reg);
+    }
+
 
 
     @RequestMapping(method=RequestMethod.POST,value = "/Aliment/add")
@@ -28,9 +34,15 @@ public class AlimentController {
         return alimentsService.getAlimentById(id);
     }
 
-    @RequestMapping("/Aliment/{name}")
-    public Aliment getAlimentByName(@PathVariable String name){
+    @RequestMapping("/Aliment/name/{name}")
+    public List<Aliment> getAlimentByName(@PathVariable String name){
         return alimentsService.getAlimentByName(name);
     }
+
+//
+//    @RequestMapping("/Aliments/top10")
+//    public List<Aliment> getTop10Aliments(){
+//        return alimentsService.getTop10Aliment();
+//    }
 
 }

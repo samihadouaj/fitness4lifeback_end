@@ -6,7 +6,7 @@ import com.grokonez.jwtauthentication.security.services.DayAssesmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/assesment")
 public class DayAssesmentController {

@@ -32,11 +32,23 @@ public class AlimentService { // to fetch all existing aliments in DB
     }
 
 
-    public Aliment getAlimentByName(String name){
+    public List<Aliment> getAlimentByName(String name){
         return alimentsRepository.findByName(name);
     }
 
+    public List<Aliment> getAlimentByRegex(String reg){
 
+        List<Aliment> l = this.alimentsRepository.findAll();
+        List<Aliment> r = new ArrayList<Aliment>();
+        for(Aliment a :l ) {
+            System.out.println(a.getName());
+
+            if(a.getName().startsWith(reg))
+                r.add(a);
+                System.out.println(a.getName());
+        }
+        return  r;
+    }
 
 
 }

@@ -11,5 +11,6 @@ public interface AlimentsRepository extends MongoRepository<Aliment,String> {
 
     Optional<Aliment> findById(String id);
     List<Aliment> findAll();
-    Aliment findByName(String name);
+    //List<Aliment> findTop10();
+    List<Aliment> findByName(String name);
 }
