@@ -2,17 +2,19 @@ package com.grokonez.jwtauthentication.model;
 
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 public class DayAssesment {
     @Id
     private String id;
     private String uid;
-    private FoodPlusQty[] mekla;
+    private List<FoodPlusQty> mekla;
     private float totalCalIn;
     private float calBurned;
     private ActivityPlusQty[] activities;
 
-    public DayAssesment(String user_id, FoodPlusQty[] mekla, float totalCalIn, float calBurned, ActivityPlusQty[] activities) {
-        this.uid = user_id;
+    public DayAssesment(String uid, List<FoodPlusQty> mekla, float totalCalIn, float calBurned, ActivityPlusQty[] activities) {
+        this.uid =uid;
         this.mekla = mekla;
         this.totalCalIn = totalCalIn;
         this.calBurned = calBurned;
@@ -27,7 +29,7 @@ public class DayAssesment {
         return uid;
     }
 
-    public FoodPlusQty[] getMekla() {
+    public List<FoodPlusQty> getMekla() {
         return mekla;
     }
 
@@ -51,7 +53,7 @@ public class DayAssesment {
         this.uid = user_id;
     }
 
-    public void setMekla(FoodPlusQty[] mekla) {
+    public void setMekla(List<FoodPlusQty> mekla) {
         this.mekla = mekla;
     }
 
