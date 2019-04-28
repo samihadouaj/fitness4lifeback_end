@@ -1,5 +1,6 @@
 package com.grokonez.jwtauthentication.controller;
 
+import com.grokonez.jwtauthentication.model.Aliment;
 import com.grokonez.jwtauthentication.model.Workout;
 import com.grokonez.jwtauthentication.security.services.WorkoutService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,12 @@ public class WorkoutController {
         return workoutService.getWorkout(id);
     }
 
+    @RequestMapping("/workout/name/{name}")
+    public Workout getWorkoutByName(@PathVariable String name){
+        return workoutService.getWorkoutByName(name);
+    }
+
+
     @PostMapping(value = "/workouts/add")
     public void addWorkout(@RequestBody Workout workout){
         workoutService.addWorkout(workout);
@@ -37,6 +44,11 @@ public class WorkoutController {
     @DeleteMapping(value = "/workouts/{id}")
     public void deleteWorkout(@PathVariable String id){
         workoutService.deleteWorkout(id);
+    }
+
+    @RequestMapping("/workout/reg/{reg}")
+    public List<Workout> getWorkoutByRegex(@PathVariable String reg){
+        return workoutService.getWorkoutByRegex(reg);
     }
 }
 

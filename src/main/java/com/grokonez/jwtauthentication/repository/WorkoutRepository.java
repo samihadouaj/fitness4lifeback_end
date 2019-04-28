@@ -8,4 +8,6 @@ import java.util.List;
 public interface WorkoutRepository extends MongoRepository<Workout,Integer> {
     Workout findById(String id);
     void deleteById(String id);
+
+    Workout findByName(String name);
 }

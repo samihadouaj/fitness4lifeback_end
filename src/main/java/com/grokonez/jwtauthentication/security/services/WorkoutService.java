@@ -1,5 +1,6 @@
 package com.grokonez.jwtauthentication.security.services;
 
+import com.grokonez.jwtauthentication.model.Aliment;
 import com.grokonez.jwtauthentication.model.Workout;
 
 import com.grokonez.jwtauthentication.repository.WorkoutRepository;
@@ -31,6 +32,11 @@ public class WorkoutService {
             return t;
         }
 
+        public Workout getWorkoutByName(String name){
+            Workout t = workoutRepository.findByName(name);
+            return t;
+        }
+
         public void addWorkout(Workout workout){
             this.workoutRepository.save(workout);
         }
@@ -42,5 +48,20 @@ public class WorkoutService {
         public void deleteWorkout(String id){
             this.workoutRepository.deleteById(id);
         }
+
+
+    public List<Workout> getWorkoutByRegex(String reg) {
+
+        List<Workout> l = this.workoutRepository.findAll();
+        List<Workout> r = new ArrayList<Workout>();
+        for(Workout  w :l ) {
+            System.out.println(w.getName());
+
+            if(w.getName().startsWith(reg))
+                r.add(w);
+            System.out.println(w.getName());
+        }
+        return  r;
+    }
 }
 
