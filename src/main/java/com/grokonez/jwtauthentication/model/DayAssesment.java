@@ -11,9 +11,9 @@ public class DayAssesment {
     private List<FoodPlusQty> mekla;
     private float totalCalIn;
     private float calBurned;
-    private ActivityPlusQty[] activities;
+    private List<ActivityPlusQty> activities;
 
-    public DayAssesment(String uid, List<FoodPlusQty> mekla, float totalCalIn, float calBurned, ActivityPlusQty[] activities) {
+    public DayAssesment(String uid, List<FoodPlusQty> mekla, float totalCalIn, float calBurned, List<ActivityPlusQty> activities) {
         this.uid =uid;
         this.mekla = mekla;
         this.totalCalIn = totalCalIn;
@@ -41,7 +41,7 @@ public class DayAssesment {
         return calBurned;
     }
 
-    public ActivityPlusQty[] getActivities() {
+    public List<ActivityPlusQty> getActivities() {
         return activities;
     }
 
@@ -65,7 +65,7 @@ public class DayAssesment {
         this.calBurned = calBurned;
     }
 
-    public void setActivities(ActivityPlusQty[] activities) {
+    public void setActivities(List<ActivityPlusQty> activities) {
         this.activities = activities;
     }
 }

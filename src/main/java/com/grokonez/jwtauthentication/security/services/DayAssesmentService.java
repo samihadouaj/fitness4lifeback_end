@@ -2,8 +2,8 @@ package com.grokonez.jwtauthentication.security.services;
 
 import com.grokonez.jwtauthentication.model.DayAssesment;
 import com.grokonez.jwtauthentication.model.FoodPlusQty;
-import com.grokonez.jwtauthentication.model.User;
-import com.grokonez.jwtauthentication.model.WrapMe;
+import com.grokonez.jwtauthentication.model.WrapMeActivity;
+import com.grokonez.jwtauthentication.model.WrapMeFood;
 import com.grokonez.jwtauthentication.repository.DayAssesmentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,10 +31,30 @@ public class DayAssesmentService {
         this.dayAssesmentRepo.deleteByUid(id);
     }
 
-    public void updateMekla(WrapMe mekla, String id) {
+    public void updateMekla(WrapMeFood mekla, String id) {
         DayAssesment day = this.getAssesment(id);
         day.setMekla(mekla.getListOfMekla());
         this.dayAssesmentRepo.save(day);
+    }
+
+    public void updateActivity(WrapMeActivity activity, String id) {
+        DayAssesment day = this.getAssesment(id);
+        day.setActivities(activity.getListOfActivity());
+        this.dayAssesmentRepo.save(day);
+    }
+
+    public void updateCalsIn(int calsIn, String id) {
+        DayAssesment day = this.getAssesment(id);
+        day.setTotalCalIn(calsIn);
+        this.dayAssesmentRepo.save(day);
+
+    }
+
+    public void updateCalsOut(int calsOut, String id) {
+        DayAssesment day = this.getAssesment(id);
+        day.setCalBurned(calsOut);
+        this.dayAssesmentRepo.save(day);
+
     }
 
 

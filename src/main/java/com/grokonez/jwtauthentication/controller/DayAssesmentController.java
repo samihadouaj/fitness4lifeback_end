@@ -2,7 +2,8 @@ package com.grokonez.jwtauthentication.controller;
 
 import com.grokonez.jwtauthentication.model.DayAssesment;
 import com.grokonez.jwtauthentication.model.FoodPlusQty;
-import com.grokonez.jwtauthentication.model.WrapMe;
+import com.grokonez.jwtauthentication.model.WrapMeActivity;
+import com.grokonez.jwtauthentication.model.WrapMeFood;
 import com.grokonez.jwtauthentication.security.services.DayAssesmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +27,6 @@ public class DayAssesmentController {
         }
 
 
-
     @GetMapping("getFoods/{id}")
     public List<FoodPlusQty> getFoods(@PathVariable String id){
         return this.dayAssesmentService.getFoods(id);
@@ -36,13 +36,22 @@ public class DayAssesmentController {
     public void deleteAsss(@PathVariable String id) {
              this.dayAssesmentService.deleteAss(id);
     }
-    @PostMapping("/addMekla/{id}")
-    public void updateMekla(@PathVariable String id , @RequestBody WrapMe mekla){
-            System.out.println("Inside the addMekla:");
-            System.out.println(id);
 
+    @PostMapping("/addMekla/{id}")
+    public void updateMekla(@PathVariable String id , @RequestBody WrapMeFood mekla){
+            System.out.println("Inside the addMekla:");
         this.dayAssesmentService.updateMekla(mekla,id);
-            System.out.println("kamelna the addMekla:");
+        this.dayAssesmentService.updateCalsIn(mekla.getCalsIn(),id);
+        System.out.println("kamelna the addMekla:");
 
     }
+
+    @PostMapping("/addWorkout/{id}")
+    public void updateActivity(@PathVariable String id , @RequestBody WrapMeActivity activity){
+        System.out.println("Inside the addActivity:");
+        this.dayAssesmentService.updateActivity(activity,id);
+        this.dayAssesmentService.updateCalsOut(activity.getCalsOut(),id);
+        System.out.println("kamelna the addActivity:");
+    }
+
 }

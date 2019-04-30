@@ -10,22 +10,22 @@ public class Workout {
     private String name;
     private String type;
     private int kcal;
-    private float duration;
+    private float qty;
 
-    public Workout(String id, String name, String type, int kcal, float duration) {
+    public Workout(String id, String name, String type, int kcal, float qty) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.kcal = kcal;
-        this.duration = duration;
+        this.qty = qty;
     }
 
-    public float getDuration() {
-        return duration;
+    public float getQty() {
+        return qty;
     }
 
-    public void setDuration(float duration) {
-        this.duration = duration;
+    public void setQty(float qty) {
+        this.qty = qty;
     }
 
     public String getId() {
