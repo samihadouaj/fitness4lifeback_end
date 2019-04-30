@@ -1,15 +1,10 @@
 package com.grokonez.jwtauthentication.security.services;
 
 import com.grokonez.jwtauthentication.model.User;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.springframework.data.annotation.Id;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -25,7 +20,7 @@ public class UserPrinciple implements UserDetails {
     private String gender;
     private int age;
     private int current_weight;
-    private int high;
+    private float height;
     private int target_weight;
     private String activity_lvl;
     private String diet_pace;
@@ -36,7 +31,7 @@ public class UserPrinciple implements UserDetails {
     private int [] balance;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserPrinciple(String id, String firstName, String lastName, String username, String gender, int age, int current_weight, int high, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, String email, String password, int[] balance , Collection<? extends GrantedAuthority> authorities) {
+    public UserPrinciple(String id, String firstName, String lastName, String username, String gender, int age, int current_weight, float height, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, String email, String password, int[] balance , Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -44,7 +39,7 @@ public class UserPrinciple implements UserDetails {
         this.gender = gender;
         this.age = age;
         this.current_weight = current_weight;
-        this.high = high;
+        this.height = height;
         this.target_weight = target_weight;
         this.activity_lvl = activity_lvl;
         this.diet_pace = diet_pace;
@@ -68,7 +63,7 @@ public class UserPrinciple implements UserDetails {
                 user.getGender(),
                 user.getAge(),
                 user.getCurrent_weight(),
-                user.getHigh(),
+                user.getHeight(),
                 user.getTarget_weight(),
                 user.getActivity_lvl(),
                 user.getDiet_pace(),
@@ -105,8 +100,8 @@ public class UserPrinciple implements UserDetails {
         return current_weight;
     }
 
-    public int getHigh() {
-        return high;
+    public float getHeight() {
+        return height;
     }
 
     public int getTarget_weight() {

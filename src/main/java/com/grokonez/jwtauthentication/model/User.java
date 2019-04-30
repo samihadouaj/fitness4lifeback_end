@@ -24,7 +24,7 @@ public class User{
     private String gender;
     private int age;
     private int current_weight;
-    private int high;
+    private float height;
     private int target_weight;
     private String activity_lvl;
     private String diet_pace;
@@ -58,14 +58,14 @@ public class User{
     public Set<String> getRole() {
         return role;
     }
-    public User(@NotBlank @Size(min = 3, max = 50) String firstName, String lastName, @NotBlank @Size(min = 3, max = 50) String username, String gender, int age, int current_weight, int high, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, @NotBlank @Size(max = 50) @Email String email, @NotBlank @Size(min = 6, max = 100) String password) {
+    public User(@NotBlank @Size(min = 3, max = 50) String firstName, String lastName, @NotBlank @Size(min = 3, max = 50) String username, String gender, int age, int current_weight, int height, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, @NotBlank @Size(max = 50) @Email String email, @NotBlank @Size(min = 6, max = 100) String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.gender = gender;
         this.age = age;
         this.current_weight = current_weight;
-        this.high = high;
+        this.height = height;
         this.target_weight = target_weight;
         this.activity_lvl = activity_lvl;
         this.diet_pace = diet_pace;
@@ -130,8 +130,8 @@ public class User{
         return current_weight;
     }
 
-    public int getHigh() {
-        return high;
+    public float getHeight() {
+        return height;
     }
 
     public int getTarget_weight() {
@@ -175,8 +175,8 @@ public class User{
         this.current_weight = current_weight;
     }
 
-    public void setHigh(int high) {
-        this.high = high;
+    public void setHeight(float height) {
+        this.height = height;
     }
 
     public void setTarget_weight(int target_weight) {
