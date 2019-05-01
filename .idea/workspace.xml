@@ -114,7 +114,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="58">
               <caret line="60" column="28" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -411,12 +411,12 @@
       <workItem from="1556616483350" duration="11569000" />
       <workItem from="1556657021858" duration="3046000" />
       <workItem from="1556662198131" duration="93000" />
-      <workItem from="1556693482412" duration="7525000" />
+      <workItem from="1556693482412" duration="9544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122190000" />
+    <option name="totallyTimeSpent" value="124209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,11 +444,11 @@
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32921347" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.50898874" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.5078652" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.7674157" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.348135" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.73370785" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.73370785" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -846,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="58">
           <caret line="60" column="28" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
