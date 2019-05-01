@@ -21,6 +21,7 @@ public class DayAssesment {
         this.activities = activities;
     }
 
+
     public String getId() {
         return id;
     }

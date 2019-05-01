@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17b39940-4779-4c26-9daf-86fdd2a6d84f" name="Default Changelist" comment="" />
+    <list default="true" id="17b39940-4779-4c26-9daf-86fdd2a6d84f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,15 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="262">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/AlimentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,12 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-              <folding>
-                <element signature="e#3824#3825#0" expanded="true" />
-                <element signature="e#3854#3855#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-281">
+              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -55,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="672">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#521#522#0" expanded="true" />
@@ -67,36 +81,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/WrapMeFood.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/DayAssesmentRepo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/WrapMeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/WorkoutController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+            <state relative-caret-position="280">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,22 +93,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Workout.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/UserRepo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="392">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/ActivityPlusQty.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="616">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="28" />
               <folding>
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/DayAssesmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="633">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#649#650#0" expanded="true" />
@@ -147,10 +146,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/FoodPlusQty.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="-26">
+              <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3163#3172#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,6 +172,7 @@
     <findStrings>
       <find>user</find>
       <find>high</find>
+      <find>balance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/message/request/SignUpForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/jwt/JwtProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/TestRestAPIs.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -198,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/UserAlimentsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Aliment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/DayAssesmentRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/AlimentsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/AlimentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AlimentController.java" />
@@ -209,21 +211,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/WorkoutController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/ActivityPlusQty.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Workout.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/DayAssesment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/DayAssesmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/WrapMeActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/WrapMeFood.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/DayAssesment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/DayAssesmentService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1987" />
+    <option name="x" value="2217" />
     <option name="y" value="34" />
-    <option name="width" value="1381" />
-    <option name="height" value="793" />
+    <option name="width" value="1371" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,6 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,7 +320,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,11 +412,13 @@
       <workItem from="1556568809741" duration="4876000" />
       <workItem from="1556616483350" duration="11569000" />
       <workItem from="1556657021858" duration="3046000" />
+      <workItem from="1556662198131" duration="93000" />
+      <workItem from="1556693482412" duration="6642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114572000" />
+    <option name="totallyTimeSpent" value="121307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,7 +433,7 @@
     <frame x="1987" y="34" width="1853" height="1046" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988764" visible="true" weight="0.22704507" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988764" visible="true" weight="0.23372287" />
       <window_info id="Structure" order="1" sideWeight="0.5011236" side_tool="true" weight="0.28046745" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -442,10 +448,10 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32921347" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.24494383" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.7683983" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.7674157" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.348135" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.73370785" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.73370785" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -459,7 +465,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32999444" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3299356" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32943794" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,23 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Aliment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -647,16 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/UserAPIs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -668,16 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/DayAssesmentRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -708,40 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/DayAssesment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/AlimentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/WrapMeFood.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -764,16 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/WorkoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Workout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -792,10 +717,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/FoodPlusQty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/WorkoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/DayAssesment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1573#1574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/DayAssesmentRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/UserRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/AlimentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3163#3172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/DayAssesmentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="633">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#649#650#0" expanded="true" />
@@ -810,44 +847,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/FoodPlusQty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/DayAssesmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#3824#3825#0" expanded="true" />
-            <element signature="e#3854#3855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="58">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
           </folding>
         </state>
       </provider>

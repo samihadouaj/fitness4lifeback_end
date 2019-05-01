@@ -53,5 +53,13 @@ public class DayAssesmentController {
         this.dayAssesmentService.updateCalsOut(activity.getCalsOut(),id);
         System.out.println("kamelna the addActivity:");
     }
+    @GetMapping("/exists/{id}")
+    public boolean dayAssesmentExists(@PathVariable String id) {
+            return this.dayAssesmentService.dayAssesmentExists(id);
+    }
 
+    @PostMapping("/finishDay/{id}")
+    public void finishDay(@PathVariable String id, @RequestBody int balance) {
+            this.dayAssesmentService.finishDay(balance,id);
+    }
 }

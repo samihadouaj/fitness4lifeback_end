@@ -1,10 +1,8 @@
 package com.grokonez.jwtauthentication.security.services;
 
-import com.grokonez.jwtauthentication.model.DayAssesment;
-import com.grokonez.jwtauthentication.model.FoodPlusQty;
-import com.grokonez.jwtauthentication.model.WrapMeActivity;
-import com.grokonez.jwtauthentication.model.WrapMeFood;
+import com.grokonez.jwtauthentication.model.*;
 import com.grokonez.jwtauthentication.repository.DayAssesmentRepo;
+import com.grokonez.jwtauthentication.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +13,8 @@ import java.util.List;
 public class DayAssesmentService {
     @Autowired
     private DayAssesmentRepo dayAssesmentRepo;
+    @Autowired
+    private UserRepo userRepo;
 
     public DayAssesment getAssesment(String uid) {
             return this.dayAssesmentRepo.findByUid(uid).get();
@@ -57,5 +57,22 @@ public class DayAssesmentService {
 
     }
 
+    public boolean dayAssesmentExists(String uid) {
+        try {
+            DayAssesment day = this.getAssesment(uid);
+            return  true;
+        }
+        catch (Exception e) {
+            return  false;
+        }
+    }
+
+    public void finishDay(int balance,String uid) {
+        User user = this.userRepo.findById(uid).get();
+        List<Integer> userBalance = user.getBalance();
+        userBalance.add(balance);
+        this.userRepo.save(user);
+        this.deleteAss(uid);
+    }
 
 }

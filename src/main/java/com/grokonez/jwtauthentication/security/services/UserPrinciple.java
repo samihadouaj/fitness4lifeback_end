@@ -28,10 +28,10 @@ public class UserPrinciple implements UserDetails {
     private int calories_needed;
     private String email;
     private String password;
-    private int [] balance;
+    private List<Integer> balance;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserPrinciple(String id, String firstName, String lastName, String username, String gender, int age, int current_weight, float height, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, String email, String password, int[] balance , Collection<? extends GrantedAuthority> authorities) {
+    public UserPrinciple(String id, String firstName, String lastName, String username, String gender, int age, int current_weight, float height, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, String email, String password, List<Integer> balance , Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -124,7 +124,7 @@ public class UserPrinciple implements UserDetails {
         return calories_needed;
     }
 
-    public int[] getBalance() {
+    public List<Integer> getBalance() {
         return balance;
     }
 

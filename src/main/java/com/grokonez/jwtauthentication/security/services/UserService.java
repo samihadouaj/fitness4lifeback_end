@@ -34,6 +34,7 @@ public class UserService {
         u.setDiet_pace(user.getDiet_pace());
         u.setHeight(user.getHeight());
         u.setBalance(user.getBalance());
+        u.setGender(user.getGender());
         this.userRepo.save(u);
     }
 

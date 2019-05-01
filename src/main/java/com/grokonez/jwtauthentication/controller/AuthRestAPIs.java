@@ -1,6 +1,8 @@
 package com.grokonez.jwtauthentication.controller;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.validation.Valid;
@@ -90,7 +92,7 @@ public class AuthRestAPIs {
             return new ResponseEntity<String>("Fail -> Email is already in use!",
                     HttpStatus.BAD_REQUEST);
         }
-
+        List<Integer> list = new ArrayList<Integer>();
         // Creating user's account
         User user = new User(signUpRequest.getFirstName(), signUpRequest.getLastName(),
                 signUpRequest.getUsername(),
@@ -104,8 +106,9 @@ public class AuthRestAPIs {
                 signUpRequest.getImc(),
                 signUpRequest.getCalories_needed(),
                 signUpRequest.getEmail(),
-                encoder.encode(signUpRequest.getPassword())
-        );
+                encoder.encode(signUpRequest.getPassword()),
+                list
+                );
 
         Set<String> strRoles = new HashSet<>() ;
         strRoles.add("ROLE_USER");

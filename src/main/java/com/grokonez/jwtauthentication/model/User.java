@@ -2,6 +2,7 @@ package com.grokonez.jwtauthentication.model;
 
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
 import java.util.Set;
 
 
@@ -30,13 +31,13 @@ public class User{
     private String diet_pace;
     private int imc;
     private int calories_needed;
-    private int [] balance;
+    private List<Integer> balance;
 
-    public void setBalance(int[] balance) {
+    public void setBalance(List<Integer> balance) {
         this.balance = balance;
     }
 
-    public int[] getBalance() {
+    public List<Integer> getBalance() {
         return balance;
     }
 
@@ -58,7 +59,7 @@ public class User{
     public Set<String> getRole() {
         return role;
     }
-    public User(@NotBlank @Size(min = 3, max = 50) String firstName, String lastName, @NotBlank @Size(min = 3, max = 50) String username, String gender, int age, int current_weight, int height, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, @NotBlank @Size(max = 50) @Email String email, @NotBlank @Size(min = 6, max = 100) String password) {
+    public User(@NotBlank @Size(min = 3, max = 50) String firstName, String lastName, @NotBlank @Size(min = 3, max = 50) String username, String gender, int age, int current_weight, int height, int target_weight, String activity_lvl, String diet_pace, int imc, int calories_needed, @NotBlank @Size(max = 50) @Email String email, @NotBlank @Size(min = 6, max = 100) String password,List<Integer> balance) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
@@ -73,6 +74,7 @@ public class User{
         this.calories_needed = calories_needed;
         this.email = email;
         this.password = password;
+        this.balance  =balance;
     }
 
     public User() {}
